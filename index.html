@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAN Card App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css%2522%253E">
+    
+</head>
+<body>
+      <div class="head">
+        <img src="data:image/png;base64,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"
+        width="200px;" height="50px;" style="margin-left: 500px;">
+      </div> 
+      <h2 style="text-align: center;">The New PAN card Application Form</h2>
+
+      <div class="sec1">
+        <p>APPLICANT NAME DETAIL</p>
+        <p class="sam">Name as given in Aadhar card</p>
+        <input type ="text"   placeholder="Enter your name here" style="width: 98%;height: 30px;">
+        <br><br>
+
+        <table>
+            <tr>
+                <td ><p class="sam">Surname/Lastname</p></td>
+                <td ><p class="sam">Firstname</p></td>
+                <td><p class="sam">Middlename <span>[Father or Husband Name]</span></p></td>
+            </tr>
+            <tr>
+                    <td><input type="text" placeholder="Enter your Surname here" style="width: 322px;height: 30px;">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td><input type="text" placeholder="Enter your Firstname here"style="width: 322px;height: 30px;">&nbsp;&nbsp;&nbsp;</td>
+                    <td><input type="text" placeholder="Enter your Middlename here"style="width: 322px;height: 30px;">&nbsp;&nbsp;&nbsp;</td>
+                
+            </tr>
+
+        </table><br>
+        <p class="sam" >Name Identity Proof</p>
+        <select style="width: 98%; height: 30px;">
+            <option>Select name Identity proof</option>
+            <option>Aadhar Proof</option>
+        </select>
+        </div><br>
+
+        <div class="sec2">
+        <p>FATHER'S NAME DETAIL</p>
+         <table>
+                <tr>
+                <td ><p class="sam">Surname/Lastname</p></td>
+                <td ><p class="sam">Firstname</p></td>
+                <td><p class="sam">Middlename</p></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="Enter your Surname here" style="width: 322px;height: 30px;">&nbsp;&nbsp;&nbsp;&nbsp; </td>
+                    <td><input type="text" placeholder="Enter your Firstname here"style="width: 322px;height: 30px;">&nbsp;&nbsp;&nbsp; </td>
+                    <td><input type="text" placeholder="Enter your Middlename here"style="width: 322px;height: 30px;">&nbsp;&nbsp;&nbsp; </td>
+                </tr>
+         </table>
+        </div><br>
+
+        <div class="sec3">
+            <p class="sam">Applicant's Date of Birth</p>
+            
+            <select style="width: 60px; height: 30px;">
+                <option>Day</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                
+            </select> 
+            <select style="width: 60px; height: 30px;">
+                <option>Month</option>
+                <option>January</option>
+                <option>Feburary</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+            </select>
+            <select style="width: 60px; height: 30px;">
+                <option>Year</option>
+                <option>2023</option>
+                <option>2022</option>
+                <option>2021</option>
+                <option>2020</option>
+                <option>2019</option>
+            </select>
+             <br><br>
+            <p class="sam">Date of Birth Proof</p>
+            <select style="width: 98%;height: 30px;">
+                <option>Select Date of Birth Proof</option>
+                <option>Aadhar</option>
+                <option>Driving License</option>
+                <option>Passport</option>
+            </select>
+
+        </div><br>
+
+        <div class="sec4">
+            <p class="sam">Address Proof</p>
+            <select style="width: 98%;height: 30px;">
+                <option>Select Date of Birth Proof</option>
+                <option>Aadhar</option>
+                <option>Driving License</option>
+                <option>Passport</option>
+            </select>
+            
+            <h6>* PAN Card will be sent in courier as per Address Proof.</h6><br>
+            
+            <p class="sam">Mobile Number</p>
+            <table>
+                <tr>
+                    <td><input type="text" placeholder= "&nbsp;+91&nbsp;&nbsp;&nbsp;" style="width: 30px;height: 30px;" size="3"></td>
+               
+                
+                    <td><input type="text" placeholder="Enter Your Mobile number here" style="width: 565%;height: 30px;"> </td>
+                </tr>
+            </table><br>
+           
+
+
+             <p class="sam"> Email ID</p>
+             <input type="text" placeholder="Enter Your Email ID here " style="width: 98%;height: 30px;">              
+
+            
+        </div><br>
+<button class="sub">SUBMIT</button>
+        
+    
+</body>
+</html>
